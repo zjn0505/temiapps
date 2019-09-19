@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Redirect</title>
+<body>
+    <p id="ua"></p>
+</body>
+<script type="text/javascript"> // <![CDATA[
+//iPhone Version:
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+    // window.location = "http://goo.gl/IWd7J";
+    window.location = "https://itunes.apple.com/il/app/temi-connect/id1332976710?mt=8"
+} else if(navigator.userAgent.match(/android/i)) {
+    // window.location = "http://goo.gl/1K1Hi";
+    window.location = "https://a.app.qq.com/o/simple.jsp?pkgname=com.robotemi"
+} else {
+    window.location = "https://robotemi.cn/apps"
+}
+
+document.getElementById("ua").innerText = navigator.userAgent
+ 
+</script>
+</body>
+</html>

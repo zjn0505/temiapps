@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Redirect</title>
+<body>
+    <p id="ua"></p>
+</body>
+<script type="text/javascript"> // <![CDATA[
+//iPhone Version:
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+    // window.location = "http://goo.gl/IWd7J";
+}
+//Android Version:
+if(navigator.userAgent.match(/android/i)) {
+    // window.location = "http://goo.gl/1K1Hi";
+}
+//Blackberry Version:
+if(navigator.userAgent.match(/blackberry/i)) {
+    // window.location = "http://goo.gl/jH2wD";
+}
+
+document.getElementById("ua").innerText = navigator.userAgent
+ 
+</script>
+</body>
+</html>
